@@ -1,0 +1,124 @@
+.head {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 2876px;
+    z-index: 109;
+}
+.login_bag {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 2876px;
+    z-index: 108;
+}
+.Bag {
+    font-size: 12px;
+    font-family: "HelveticaNeue";
+    color: rgb(0, 0, 0);
+    line-height: 5.417;
+    text-align: left;
+    position: absolute;
+    left: 1217.937px;
+    top: 70.49px;
+    z-index: 106;
+}
+.E_mail_sing_up {
+    font-size: 12px;
+    font-family: "HelveticaNeue";
+    color: rgb(0, 0, 0);
+    line-height: 5.417;
+    text-align: left;
+    position: absolute;
+    left: 1055.937px;
+    top: 70.49px;
+    z-index: 105;
+}
+.menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 2876px;
+    z-index: 103;
+}
+.search {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 2876px;
+    z-index: 102;
+}
+.ico {
+    background-color: rgb(169, 168, 168);
+    position: absolute;
+    left: 1228px;
+    top: 83px;
+    width: 13px;
+    height: 13px;
+    z-index: 101;
+}
+.Style_Name {
+    font-size: 12px;
+    font-family: "FuturaPT";
+    color: rgb(168, 168, 168);
+    line-height: 5.417;
+    text-align: left;
+    position: absolute;
+    left: 1120.105px;
+    top: 121.49px;
+    z-index: 100;
+}
+.form {
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    left: 1122px;
+    top: 104px;
+    width: 118px;
+    height: 2px;
+    z-index: 99;
+}
+
+.Women_________________Men_________________Handb {
+    font-size: 14px;
+    font-family: "FuturaPT";
+    color: rgb(0, 0, 0);
+    line-height: 4.643;
+    text-align: left;
+    position: absolute;
+    left: 59.844px;
+    top: 119.749px;
+    z-index: 97;
+}
+.logo_tm {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 2876px;
+    z-index: 95;
+}
+.Template {
+    font-size: 30px;
+    font-family: "FuturaPT";
+    color: rgb(0, 0, 0);
+    line-height: 2.167;
+    text-align: left;
+    position: absolute;
+    left: 59.964px;
+    top: 75.323px;
+    z-index: 94;
+}
+.fon {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px -1px 0px 0px rgba(229, 229, 229, 0.004);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1300px;
+    height: 120px;
+    z-index: 92;
+}
