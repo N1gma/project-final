@@ -5,18 +5,25 @@
     <title>Start page</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/@tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/@mobile.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <script src="js/js.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 <header class="main-content">
     <div class="main-logo">Template</div>
     <div class="login-bag">
-        <a class="bag" href="#"><img class="bag-ico" src="img/icons/ico_bag.png">Bag</a>
-        <a class="login" href="#">E-mail sign up</a>
+        <button class="bag button-element" type="button">
+            <a href="#">Bag<img src="img/icons/ico_bag.png"></a>
+        </button>
+        <button class="login button-element" type="button">
+            <a href="#">E-mail sign up</a>
+        </button>
     </div>
-    <ul class="menu">
+    <button class="tablet-menu button-element" type="button"><img id="switch" src="img/promo/mobile/menu.png"></button>
+    <ul class="menu list-elements">
         <li><a href="#">Woman</a></li>
         <li><a href="#">Man</a></li>
         <li><a href="#">Handbags</a></li>
@@ -26,18 +33,129 @@
         <li><a href="#">Clearance</a></li>
         <li><a href="#">Store Locator</a></li>
     </ul>
-    <form>
-        <input class="search" type="text" placeholder="Style Name">
+    <form class="search">
+        <input id="search-input" type="text" placeholder="Style Name">
+        <button class="button-element" id="search-ico" type="button"><img src="img/icons/ico_search.png"></button>
     </form>
 </header>
-<div class="promo">
-    <a href="#"><img id="promoBody" src="img/promo/promo_img_1.jpg" usemap="#promoNav"></a>
-    <p><map name="promoNav">
-        <area id="first" shape="circle" coords="608,810,5"  onclick="promoChange(2)">
-        <area shape="circle" coords="636,810,5"  onclick="promoChange(3)">
-        <area shape="circle" coords="665,810,5"  onclick="promoChange(4)">
-        <area shape="circle" coords="690,810,5"  onclick="promoChange(1)">
-    </map></p>
+<div class="promo-container">
+    <ul id="promoMain">
+        <li ><a href="#"><img class="promo-img promo-1" src="img/promo/promo_img_1.jpg"></a></li>
+        <li class="promo-2">
+            <div class="promo-2-container-1">
+                <a href="#"><img class="promo-2-1"  src="img/promo/promo-img-2-compose/_1.png"></a>
+                <a href="#"><img class="promo-2-2" src="img/promo/promo-img-2-compose/_2-1.png"></a>
+                <a href="#"><img class="promo-2-4" src="img/promo/promo-img-2-compose/_4.png"></a>
+                <a href="#"><img class="promo-2-5" src="img/promo/promo-img-2-compose/_5-1.png"></a>
+                <a href="#"><img class="promo-2-6" src="img/promo/promo-img-2-compose/_6-1.png"></a>
+            </div>
+            <div class="promo-2-container-2">
+                <a href="#"><img class="promo-2-3" src="img/promo/promo-img-2-compose/_3.png"></a>
+            </div>
+        </li>
+        <li class="tablet-promo-2">
+            <a href="#"><img class="promo-img promo-2-tablet" src="img/promo/tablet/_2.png"></a>
+        </li>
+        <li ><a href="#"><img class="promo-img promo-3" src="img/promo/promo_img_3.jpg"></a></li>
+    </ul>
+    <div class="promo-navigation">
+        <img id="0" class="active" src="img/icons/promo_link_nonactive.png">
+        <img id="100" src="img/icons/promo_link_nonactive.png">
+        <img id="200" src="img/icons/promo_link_nonactive.png">
+        <img src="img/icons/promo_link_nonactive.png">
+    </div>
 </div>
+<div class="side-promo-banner">
+    <a href="#"><img id="side-1" src="img/promo/banner_left.jpg"></a>
+    <a href="#"><img id="side-2" src="img/promo/banner_right.jpg"></a>
+</div>
+<article class="new-arrivals">
+    <h2 class="new-arrivals-title ">New arrivals</h2>
+    <div class="new-arrivals-content">
+        <figure>
+            <img src="img/new_arrivals/1.jpg">
+            <figcaption><p><b>Straight Leg Jeans</b><br><br>£55.00</p></figcaption>
+        </figure>
+        <figure>
+            <img src="img/new_arrivals/2.jpg">
+            <figcaption><p><b>Boyfriend T-Shirt with<br> Bohemian Print</b><br><br>£34.25</p></figcaption>
+        </figure>
+        <figure>
+            <img src="img/new_arrivals/33.jpg">
+            <figcaption><p><b>Only Busted Knee Jean</b><br><br>£140.50</p></figcaption>
+        </figure>
+        <figure>
+            <img src="img/new_arrivals/4.jpg">
+            <figcaption><p><b>Only Skinny Jeans</b><br><br>£12.75</p></figcaption>
+        </figure>
+    </div>
+    <button class="button-element"><a href="#">All arrivals</a></button>
+</article>
+<footer>
+    <div class="footer-main-container">
+        <div class="lists-container">
+            <section class="quick-links-padded-left list-elements"><b>Quick Links</b><br>
+                <ul>
+                    <li><a href="#">Store locator</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Size guide</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </section>
+            <section class="quick-links list-elements"><b>Customer Care</b><br>
+                <ul>
+                    <li><a href="#">Customer service</a></li>
+                    <li><a href="#">Track my order</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Shipping & delivery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </section>
+            <section class="quick-links-padded-left"><b>Questions</b><br>
+                <button class="right-content" type="button"><a href="#">Tweet us <b>@template</b></a></button><br>
+                <p class="social-info">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                <section class="hidden-quick-links"><b>Order by phone</b><br>
+                    <p class="right-content phone">8-800-409-47-12</p>
+                </section>
+                <a href="#"><img class="right-content button-element" src="img/icons/fb.png"></a>
+                <a href="#"><img class="right-content button-element" src="img/icons/twi.png"></a>
+            </section>
+            <section class="quick-links desk-only"><b>Order by phone</b><br>
+                <p class="right-content phone">8-800-409-47-12</p>
+            </section>
+        </div>
+    </div>
+</footer>
+<footer class="mobile-footer">
+    <ul class="list-elements">
+            <li><a href="#">Legal notice</a></li>
+            <li><a href="#">Private police</a></li>
+            <li><a href="#">Site map</a></li>
+    </ul>
+    <a href="#"><img class="button-element" src="img/icons/fb.png"></a>
+    <a href="#"><img class="button-element" src="img/icons/twi.png"></a>
+</footer>
+<footer class="desk-footer">
+    <div class="footer-main-container">
+        <address class="footer2-small-block">
+            <b>© 2010–2015,  The Template Group inc.</b>
+        </address>
+            <div class="footer2-large-block"><b>Share</b></div>
+            <div class="footer2-large-block">
+                <button type="button"><a href="#">1437</a></button>
+            </div>
+        <div class="footer2-medium-block invisible">
+            <ul class="list-elements">
+                <li><a href="#">Legal notice</a></li>
+                <li><a href="#">Private police</a></li>
+                <li><a href="#">Site map</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>

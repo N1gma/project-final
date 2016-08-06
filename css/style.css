@@ -1,9 +1,8 @@
 
 .main-content{
     display: block;
-    width: 100%;
     max-width: 1180px;
-    padding: 30px 60px 25px 60px;
+    padding: 1% 4.6% 0.8% 4.6%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -12,19 +11,21 @@
     margin: 0;
     padding: 0;
     font: bold 30px "Open Sans", sans-serif ;
-    width: auto;
     display: inline-block;
     float: left;
 }
 
 .login-bag{
-    margin-top: 9px;
+    margin-top: 0.8%;
     width: 25%;
     display: inline-block;
     float: right;
+    font: 12px "Roboto", sans-serif;
+    min-width: 192px;
 }
 
 .login{
+    padding: 0;
     float: right;
     display: inline-block;
 }
@@ -33,30 +34,24 @@
     float: right;
     display: inline-block;
     box-sizing: border-box;
+    text-align: right;
+    margin-left: 15%;
+    min-width: 80px;
+}
+
+.bag img{
+    float: left;
     margin-left: 20%;
 }
 
-.bag-ico{
-    margin-right: 15px;
-    width: 12px;
-    height: 12px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    font: 12px "Roboto", sans-serif;
-}
-
-.menu li a{
-    font:  14px "Open Sans" , sans-serif ;
-    font-weight: bold;
+.tablet-menu{
+    display: none;
 }
 
 .menu{
     float: left;
     width: 78%;
-    margin-top: 17px ;
+    margin-top: 1.4% ;
     clear: both;
     list-style: none;
     display: inline-flex;
@@ -70,15 +65,29 @@ a{
     display: inline-block;
 }
 
+
 .search{
     width: 10%;
-    padding-bottom: 8px;
-    margin-top: 17px ;
+    padding-bottom: 0.5%;
+    margin-top: 1.4% ;
     float: right;
-    font:  12px "Open Sans" , sans-serif ;
-    background: url('../img/icons/ico_search.png')  no-repeat right 28%;
+    font-size: 0;
     border: none;
     border-bottom: 2px solid lightgray;
+}
+.search button{
+    width: 20%;
+    display: inline-block;
+    border: none;
+    padding: 0;
+}
+
+.search input{
+    font:  12px "Open Sans" , sans-serif ;
+    width: 80%;
+    display: inline-block;
+    border: none;
+    padding: 0;
 }
 
 .search::-webkit-input-placeholder {
@@ -89,12 +98,329 @@ a{
     font:  12px "Open Sans" , sans-serif ;
 }
 
-.promo{
+.promo-container{
     clear: both;
-    display: block;
-    width: 100%;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #f7f7f7;
 }
 
 
+.promo-container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    transition: margin-left 250ms;
+    font-size: 0;
+    height: 100%;
+}
+
+.promo-container  li{
+    width: 25%;
+    height: inherit;
+    font-size: 0;
+    float: left;
+}
+
+.promo-img{
+    width:100%;
+}
+
+.promo-2-container-1{
+    width:75%;
+    height: 100%;
+    font-size: 0;
+    float: left;
+    display: inline-block;
+    background-color: #f7f7f7;
+ }
+
+.promo-2-container-2{
+    display: inline-block;
+    width:25%;
+    height: 100%;
+    font-size: 0;
+    float: left;
+    background-color: #f7f7f7;
+}
+
+.promo-2-1{
+    width: 66.66%;
+}
+
+.promo-2-2{
+    width: 33.33%;
+}
+
+.promo-2-3{
+    width: 100%;
+}
+.promo-2-4{
+    width: 33.33%;
+}
+
+.promo-2-5{
+    width: 33.33%;
+}
+
+.promo-2-6{
+    width: 33.33%;
+}
+
+.tablet-promo-2{
+    display: none;
+}
+
+.promo-navigation{
+    width: 7.5%;
+    height: 1%;
+    position: absolute;
+    left: 46.5%;
+    bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-navigation img{
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+}
+
+.promo-navigation img:hover{
+    box-shadow: 0 0 1em red;
+}
+
+.side-promo-banner{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    border-bottom: 2px solid lightgray;
+    overflow: hidden;
+}
+
+
+
+.side-promo-banner img{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width:50%;
+    display: inline-block;
+}
+
+
+
+.new-arrivals{
+    max-width: 1180px;
+    margin: 0 auto;
+    clear: both;
+}
+.new-arrivals-title{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10% 0 6.7% 0;
+    font: bold 59px "Open Sans" , sans-serif ;
+}
+
+.new-arrivals-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-arrivals-content figure{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 23%;
+}
+
+.new-arrivals-content img{
+    max-width: 100%;
+    margin-bottom: 19%;
+}
+
+.new-arrivals button{
+    display: block;
+    font: bold 26px "Open Sans" , sans-serif ;
+    border: 1px solid lightgray;
+    background: white;
+    margin: 8.2% auto 6.4% auto;
+    padding: 1.7% 9%;
+}
+
+footer{
+    max-width:100% ;
+    border-top: 1px solid lightgray ;
+    margin: 0 auto;
+}
+
+.footer-main-container{
+    margin: 0 auto;
+    max-width:1300px ;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.lists-container{
+    padding: 4% 0 6.7% 0;
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links{
+    display: inline-block;
+    font: 18px "Open Sans", sans-serif;
+    width: 25%;
+}
+
+.hidden-quick-links{
+    font: 18px "Open Sans", sans-serif;
+    width: 100%;
+    display: none;
+}
+
+.quick-links-padded-left{
+    display: inline-block;
+    font: 18px "Open Sans", sans-serif;
+    padding-left: 4.5%;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+
+.lists-container ul{
+    margin-top: 46px;
+    font: 14px "Roboto", sans-serif;
+}
+
+.lists-container li{
+    margin-bottom: 23px;
+}
+
+.lists-container button{
+    font: 14px "Roboto", sans-serif;
+    padding: 0;
+    border: none;
+    background: none;
+    padding-left: 9% ;
+    background: url("../img/icons/twi_ico.png") no-repeat left ;
+    margin-bottom: 27%;
+}
+
+.right-content {
+    margin-top: 15px;
+}
+
+.phone{
+    font-size: 13px;
+    margin-left: 1%;
+}
+
+.social-info{
+    font: italic 14px "Crimson", sans-serif;
+    color: rgb(117, 117, 117);
+    line-height: 200%;
+}
+
+.lists-container img{
+    margin: 38px 9% 0 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+.footer2-small-block{
+    padding: 2.5% 0 2.5% 4.5%;
+    display: inline-block;
+    width: 20.5%;
+    font: 12px "Roboto", sans-serif;
+    text-align: left;
+    float: left;
+}
+
+.footer2-medium-block{
+     padding: 2.5% 4.5% 2.5% 0;
+    margin-left: -1.5%;
+     display: inline-block;
+     width: 20.5%;
+     float: left;
+     font: bold 12px "Roboto", sans-serif;
+}
+.footer2-medium-block ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list-elements {
+
+}
+.list-elements a{
+    transition: color 1s;
+}
+
+.list-elements a:hover{
+    color:  red;
+}
+
+.button-element{
+    transition: box-shadow 0.5s ,background-color 0.5s, color 0.5s, border-radius 0.5s, border-color 0.5s;
+}
+
+.button-element:hover{
+    border-color: red;
+    box-shadow: 0 0 5px 5px rgba(255,0,0,0.75);
+    background-color: red ;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer2-large-block{
+    padding: 2.2% 0 2.5% 0;
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.footer2-large-block button{
+    font: 12px "Open Sans", sans-serif;
+    display: block;
+    background: url("../img/icons/share.png") no-repeat right;
+    margin: 0 auto;
+    min-width: 50px;
+    text-align: right;
+    float: left;
+    width: 46px;
+    height: 21px;
+}
+
+.footer2-large-block b{
+    font:16px "Open Sans", sans-serif;
+    float: right;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: inline-block;
+}
+
+.mobile-footer{
+    display: none;
+}
+
+.padded-left{
+    padding-left: 4.5%;
+}

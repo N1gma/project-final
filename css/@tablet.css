@@ -1,0 +1,96 @@
+@media screen and (max-width: 1080px) and (min-width: 480px) {
+    .menu{
+       margin: 3% 0;
+    }
+
+    .tablet-promo-2{
+        display: inline-block;
+    }
+    .promo-2{
+        display: none;
+    }
+
+    #side-1{
+        width: 66.7%;
+    }
+    #side-2{
+        width: 33.3%;
+    }
+    .login-bag{
+        width: 33%;
+        margin-top: 2.8%;
+    }
+
+    .search{
+        border: none;
+        width: 2%;
+        margin: 3% 0;
+    }
+
+    .search input {
+        border-bottom: 2px solid lightgray;
+        position: absolute;
+        top: 5%;
+        left: 87%;
+        display: none;
+        width: 8%;
+    }
+
+    .search button{
+        width: 100%;
+    }
+
+    .menu{
+        width: 95%;
+    }
+
+    .menu li {
+        font-size: 2vmin;
+    }
+
+    .new-arrivals-title{
+        font: bold 45px "Open Sans" , sans-serif ;
+    }
+
+    .new-arrivals-content figure:last-child{
+        display: none;
+    }
+
+    .new-arrivals-content figure{
+        width: 32%;
+    }
+
+    .new-arrivals-content{
+        width: 89.8%;
+        margin: 0 auto;
+    }
+
+    .social-info,.desk-only{
+        display: none;
+    }
+
+    .hidden-quick-links{
+        display: block;
+    }
+
+    .quick-links,.quick-links-padded-left{
+        width: 32%;
+    }
+
+    .footer2-small-block, .footer2-medium-block{
+        width: 40%;
+        box-sizing: border-box;
+    }
+    .footer2-large-block{
+        width: 10%;
+    }
+
+    .footer2-medium-block ul{
+        justify-content: space-around;
+        text-align: right;
+    }
+
+    .new-arrivals button{
+        margin: 13% auto 19% auto;
+    }
+}
