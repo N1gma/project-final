@@ -2,22 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Start page</title>
+    <title>Details</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/@tablet.css">
-    <link rel="stylesheet" type="text/css" href="css/@mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/item/style-item.css">
+    <link rel="stylesheet" type="text/css" href="css/item/@mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/item/@tablet.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <script src="js/script.js"></script>
+    <script defer src="js/item.js"></script>
 </head>
 <body>
 <header class="main-content">
     <div class="main-logo">Template</div>
     <div class="login-bag">
-        <button class="bag button-element" type="button">
-            <a href="shopping_bag.html"><p id="bagValue">Bag</p><img src="img/icons/ico_bag.png"></a>
-        </button>
+        <a href="shopping_bag.html">
+            <button class="bag button-element" type="button">
+            <p id="bagValue">Bag</p><img src="img/icons/ico_bag.png">
+        </button></a>
         <button class="login button-element" type="button">
             <a href="#">E-mail sign up</a>
         </button>
@@ -38,58 +39,46 @@
         </form></li>
     </ul>
 </header>
-<div class="promo-container">
-    <ul id="promoMain">
-        <li ><a href="catalog.html"><img class="promo-img promo-1" src="img/promo/promo_img_1.jpg"></a></li>
-        <li class="promo-2">
-            <div class="promo-2-container-1">
-                <a href="catalog.html"><img class="promo-2-1"  src="img/promo/promo-img-2-compose/_1.png"></a>
-                <a href="catalog.html"><img class="promo-2-2" src="img/promo/promo-img-2-compose/_2-1.png"></a>
-                <a href="catalog.html"><img class="promo-2-4" src="img/promo/promo-img-2-compose/_4.png"></a>
-                <a href="catalog.html"><img class="promo-2-5" src="img/promo/promo-img-2-compose/_5-1.png"></a>
-                <a href="catalog.html"><img class="promo-2-6" src="img/promo/promo-img-2-compose/_6-1.png"></a>
-            </div>
-            <div class="promo-2-container-2">
-                <a href="catalog.html"><img class="promo-2-3" src="img/promo/promo-img-2-compose/_3.png"></a>
-            </div>
-        </li>
-        <li class="tablet-promo-2">
-            <a href="catalog.html"><img class="promo-img promo-2-tablet" src="img/promo/tablet/_2.png"></a>
-        </li>
-        <li ><a href="catalog.html"><img class="promo-img promo-3" src="img/promo/promo_img_3.jpg"></a></li>
-    </ul>
-    <div class="promo-navigation">
-        <img id="0" class="active" src="img/icons/promo_link_nonactive.png">
-        <img id="100" src="img/icons/promo_link_nonactive.png">
-        <img id="200" src="img/icons/promo_link_nonactive.png">
-        <img src="img/icons/promo_link_nonactive.png">
+
+
+<article class="new-arrivals-content">
+    <div class="back-to">
+        <a class="button-element"  href="catalog.html">< Back to catalog</a>
     </div>
-</div>
-<div class="side-promo-banner">
-    <a href="#"><img id="side-1" src="img/promo/banner_left.jpg"></a>
-    <a href="#"><img id="side-2" src="img/promo/banner_right.jpg"></a>
-</div>
-<article class="new-arrivals">
-    <h2 class="new-arrivals-title ">New arrivals</h2>
-    <div class="new-arrivals-content">
-        <figure>
-            <img src="img/new_arrivals/1.jpg">
-            <figcaption><p><b>Straight Leg Jeans</b><br><br>£55.00</p></figcaption>
-        </figure>
-        <figure>
-            <img src="img/new_arrivals/2.jpg">
-            <figcaption><p><b>Boyfriend T-Shirt with<br> Bohemian Print</b><br><br>£34.25</p></figcaption>
-        </figure>
-        <figure>
-            <img src="img/new_arrivals/33.jpg">
-            <figcaption><p><b>Only Busted Knee Jean</b><br><br>£140.50</p></figcaption>
-        </figure>
-        <figure>
-            <img src="img/new_arrivals/4.jpg">
-            <figcaption><p><b>Only Skinny Jeans</b><br><br>£12.75</p></figcaption>
-        </figure>
+    <div class="new-arrivals">
+        <div class="tumbnail-content">
+            <div class="main-tumb">
+                <img  src="img/promo/full.png">
+            </div>
+            <div class="tumb-nav">
+                <a href="#"><img src="img/promo/thumb_0.png"></a>
+                <a href="#"><img src="img/promo/thumb_1.png"></a>
+                <a href="#"><img src="img/promo/thumb_2.png"></a>
+            </div>
+        </div>
+        <div class="details-selection">
+            <h2 class="title">Dark classic fit suit</h2>
+            <p class="price">£180.60</p>
+            <p class="subtitle">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs
+                and a subtle stripe pattern throughout. </p>
+            <h2 class="title">Size</h2>
+            <section class="selection-sec">
+                <button class="select-button button-element">UK 52</button>
+                <button class="select-button button-element">UK 54</button>
+                <button class="select-button button-element">UK 56</button>
+            </section>
+            <h2 class="title">Color</h2>
+            <section class="selection-sec">
+                <button class="select-button button-element">Black</button>
+                <button class="select-button button-element">Blue</button>
+            </section>
+            <button class="button-element add-to-bag">Add to bag</button>
+        </div>
     </div>
-    <button class="button-element"><a href="#">All arrivals</a></button>
+    <div class="side-promo-banner">
+        <a href="#"><img id="side-c1" src="img/new_arrivals/left-banner.png"></a>
+        <a href="#"><img id="side-c2" src="img/new_arrivals/right-banner.png"></a>
+    </div>
 </article>
 <footer>
     <div class="footer-main-container">
@@ -130,9 +119,9 @@
 </footer>
 <footer class="mobile-footer">
     <ul class="list-elements">
-            <li><a href="#">Legal notice</a></li>
-            <li><a href="#">Private police</a></li>
-            <li><a href="#">Site map</a></li>
+        <li><a href="#">Legal notice</a></li>
+        <li><a href="#">Private police</a></li>
+        <li><a href="#">Site map</a></li>
     </ul>
     <a href="#"><img class="button-element" src="img/icons/fb.png"></a>
     <a href="#"><img class="button-element" src="img/icons/twi.png"></a>
@@ -142,10 +131,10 @@
         <address class="footer2-left-block">
             <b>© 2010–2015,  The Template Group inc.</b>
         </address>
-            <div class="footer2-medium-block"><b>Share</b></div>
-            <div class="footer2-medium-block">
-                <button type="button"><a href="#">1437</a></button>
-            </div>
+        <div class="footer2-medium-block"><b>Share</b></div>
+        <div class="footer2-medium-block">
+            <button type="button"><a href="#">1437</a></button>
+        </div>
         <div class="footer2-right-block">
             <ul class="list-elements">
                 <li><a href="#">Legal notice</a></li>

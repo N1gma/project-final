@@ -2,7 +2,7 @@
 .main-content{
     display: block;
     max-width: 1180px;
-    padding: 1% 4.6% 0.8% 4.6%;
+    padding: 1% 4.6% 1.7% 4.6%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -108,103 +108,6 @@
     font:  12px "Open Sans" , sans-serif ;
 }
 
-.promo-container{
-    clear: both;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    background-color: #f7f7f7;
-}
-
-
-.promo-container ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 400%;
-    transition: margin-left 250ms;
-    font-size: 0;
-    height: 100%;
-}
-
-.promo-container  li{
-    width: 25%;
-    height: inherit;
-    font-size: 0;
-    float: left;
-}
-
-.promo-img{
-    width:100%;
-}
-
-.promo-2-container-1{
-    width:75%;
-    height: 100%;
-    font-size: 0;
-    float: left;
-    display: inline-block;
-    background-color: #f7f7f7;
- }
-
-.promo-2-container-2{
-    display: inline-block;
-    width:25%;
-    height: 100%;
-    font-size: 0;
-    float: left;
-    background-color: #f7f7f7;
-}
-
-.promo-2-1{
-    width: 66.66%;
-}
-
-.promo-2-2{
-    width: 33.33%;
-}
-
-.promo-2-3{
-    width: 100%;
-}
-.promo-2-4{
-    width: 33.33%;
-}
-
-.promo-2-5{
-    width: 33.33%;
-}
-
-.promo-2-6{
-    width: 33.33%;
-}
-
-.tablet-promo-2{
-    display: none;
-}
-
-.promo-navigation{
-    width: 7.5%;
-    height: 1%;
-    position: absolute;
-    left: 50%;
-    bottom: 4%;
-    display: flex;
-    justify-content: space-between;
-    min-width: 100px;
-}
-
-.promo-navigation img{
-    width: 6px;
-    height: 6px;
-    cursor: pointer;
-}
-
-.promo-navigation img:hover{
-    box-shadow: 0 0 1em red;
-}
-
 .side-promo-banner{
     max-width: 100%;
     margin: 0 auto;
@@ -216,55 +119,56 @@
 
 
 
-.side-promo-banner img{
-    margin: 0;
-    padding: 0;
-    float: left;
-    width:50%;
-    display: inline-block;
-}
-
-
-
 .new-arrivals{
     max-width: 1180px;
     margin: 0 auto;
     clear: both;
     padding:0 4.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .new-arrivals-title{
     text-align: center;
     display: block;
     width: 100%;
-    margin: 10% 0 6.7% 0;
-    font: bold 59px "Open Sans" , sans-serif ;
+    font: bold 26px "Open Sans" , sans-serif ;
+    margin-top: 67px;
+    margin-bottom: 7px;
+
+}
+
+.new-arrivals-subtitle {
+    font: italic 16px 'Crimson', sans-serif;
+    margin-top: 14px;
+    line-height: 25px;
 }
 
 .new-arrivals-content{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .new-arrivals-content figure{
-    margin: 0;
+    margin: 57px 0 10px 0;
     padding: 0;
     text-align: center;
-    width: 23%;
 }
-
+.i-g-font{
+    color: lightgray;
+    font-style: italic;
+}
 .new-arrivals-content img{
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 19%;
 }
 
-.new-arrivals button{
+.new-arrivals-content button{
     display: block;
     font: bold 26px "Open Sans" , sans-serif ;
     border: 1px solid lightgray;
     background: white;
-    margin: 8.2% auto 6.4% auto;
-    padding: 1.7% 9%;
+    margin: 98px auto 80px auto;
+    padding: 1.7% 7%;
 }
 
 footer{
@@ -274,12 +178,12 @@ footer{
 }
 
 .footer-main-container{
-    padding: 0 4.5%;
     margin: 0 auto;
     max-width:1300px ;
     font-size: 0;
     overflow: hidden;
     display: flex;
+    padding: 0 4.5%;
 }
 .end-line{
     max-width: 1180px;
@@ -329,7 +233,7 @@ footer{
     border: none;
     background: none;
     padding-left: 9% ;
-    background: url("../img/icons/twi_ico.png") no-repeat left ;
+    background: url("../../img/icons/twi_ico.png") no-repeat left ;
     margin-bottom: 27%;
 }
 
@@ -385,9 +289,8 @@ footer{
 }
 
 .list-elements a:hover{
-     color:  red;
+    color:  red;
 }
-
 
 .button-element{
     transition: box-shadow 0.5s ,background-color 0.5s, color 0.5s, border-radius 0.5s, border-color 0.5s;
@@ -414,7 +317,7 @@ footer{
 .footer2-medium-block button{
     font: 12px "Open Sans", sans-serif;
     display: block;
-    background: url("../img/icons/share.png") no-repeat right;
+    background: url("../../img/icons/share.png") no-repeat right;
     margin: 0 auto;
     min-width: 50px;
     text-align: right;
@@ -439,4 +342,96 @@ footer{
 .padded-left{
     padding-left: 4.5%;
 }
+.filters-container{
+    width: 100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 4px 0;
+}
+.filters{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters-block {
+    width: 15%;
+
+}
+.filters-block button:hover{
+     background-color: red;
+     color: white;
+     cursor: pointer;
+ }
+.filters-block button:hover span{
+   visibility: hidden;
+}
+
+.filters-block button{
+    background: url("../../img/icons/ico.png") no-repeat 89% 45%;
+    width: 100%;
+    font-weight: bold;
+    padding:0 6%;
+    text-align: left;
+    height: 50px;
+    transition: background-color 1s, color 1s;
+}
+
+.filters-block span{
+    display: none;
+    text-align: justify;
+}
+
+.left-element {
+    width: 20%;
+    padding-left: 3.5%;
+}
+
+.right-element{
+    width: 20%;
+    padding-right: 3.5%;
+}
+
+.filters-list{
+    display: none;
+    padding:0 6%;
+    flex-direction: row;
+}
+
+.active-filter{
+    background: #f7f7f7 repeat;
+    font: 12px Roboto, sans-serif;
+}
+
+.filtered{
+    color: red;
+    font: 18px Roboto, sans-serif;
+}
+
+.hover{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#side-c2,#side-c1{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.desk-filter-head{
+    display: none;
+}
+.about-filter{
+    width: 100%;
+    clear: both;
+    display: none;
+    padding: 20px 10px 40px 10px;
+    font: italic 12px 'Crimson', sans-serif;
+}
+
+
 

@@ -1,26 +1,11 @@
 @media screen and (max-width: 1080px) and (min-width: 480px) {
     .menu{
-       margin: 3% 0;
+       margin: 2% 0;
     }
 
-
-
-    .tablet-promo-2{
-        display: inline-block;
-    }
-    .promo-2{
-        display: none;
-    }
-
-    #side-1{
-        width: 66.7%;
-    }
-    #side-2{
-        width: 33.3%;
-    }
     .login-bag{
         width: 50%;
-        margin-top: 2.8%;
+        margin-top: 1.6%;
     }
     .form-search{
         width: 2%;
@@ -43,18 +28,6 @@
 
     .menu{
         width: 100%;
-    }
-
-    .new-arrivals-title{
-        font: bold 45px "Open Sans" , sans-serif ;
-    }
-
-    .new-arrivals-content figure:last-child{
-        display: none;
-    }
-
-    .new-arrivals-content figure{
-        width: 31%;
     }
 
     .social-info,.desk-only{
@@ -82,13 +55,52 @@
         text-align: right;
     }
 
-    .new-arrivals button{
-        margin: 13% auto 19% auto;
+
+    #side-c1{
+        width: 66.7%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    #side-c2{
+        width: 33.3%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    .side-info{
+
+        margin-left: 7%;
+        margin-top: 3%;
+
+    }
+    .side-info h4{
+        padding-bottom: 33px;
+    }
+    .new-arrivals{
+        margin-top: 4.3%;
+    }
+    .bottom-info{
+        margin-top: 20%;
+    }
+    .title{
+        padding: 13px 9%;
+    }
+    .new-arrivals section{
+        margin-bottom: 7.5%;
+    }
+    .title-wrap{
+        margin-top: 8px;
+    }
+    .title-2{
+        padding: 13px 0 13px 10%;
+    }
+    .shop-ctrl{
+        margin: 26px auto 47px auto;
     }
     .lists-container{
         padding: 54px 0 66px 0;
     }
-
 
 }
 @media screen and (max-width: 660px) and (min-width: 480px) {

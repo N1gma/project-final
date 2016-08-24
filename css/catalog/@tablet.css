@@ -1,0 +1,220 @@
+@media screen and (max-width: 1080px) and (min-width: 480px) {
+    .menu{
+       margin: 2% 0;
+    }
+
+    .login-bag{
+        width: 50%;
+        margin-top: 1.6%;
+    }
+    .form-search{
+        width: 2%;
+    }
+    .search{
+        border: none;
+        width: 100%;
+        margin: 3% 0;
+    }
+
+    .search input {
+        border-bottom: 2px solid lightgray;
+        width: 0;
+        transition: width 1s;
+    }
+
+    .search button{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .new-arrivals-title{
+        font-size:22px ;
+        margin-bottom: 62px;
+    }
+
+    .new-arrivals-subtitle {
+        font-size:12px;
+        margin-top: 23px;
+    }
+
+    .new-arrivals-content figure{
+        width: 28%;
+        margin: 39px 0 10px 0;
+    }
+    .new-arrivals-content button{
+        margin: 208px auto 139px auto
+    }
+
+    .social-info,.desk-only{
+        display: none;
+    }
+
+    .hidden-quick-links{
+        display: block;
+    }
+
+    .quick-links,.quick-links-padded-left{
+        width: 32%;
+    }
+
+    .footer2-left-block, .footer2-right-block{
+        width: 40%;
+        box-sizing: border-box;
+    }
+    .footer2-medium-block{
+        width: 10%;
+    }
+
+    .footer2-right-block ul{
+        justify-content: space-around;
+        text-align: right;
+    }
+    .lists-container{
+        padding: 54px 0 66px 0;
+    }
+
+    .new-arrivals button{
+        margin: 13% auto 19% auto;
+    }
+
+    .filters{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 4.6%;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+    .filters-container{
+        overflow: hidden;
+    }
+
+    .filters-block {
+        width: auto;
+    }
+
+    .filters-block button{
+        background: none;
+        width: 100%;
+        font-weight: bold;
+        padding:15px 10px;
+        text-align: left;
+    }
+    .filters .filters-block:nth-last-child(1){
+        background: url("../../img/icons/ico.png") no-repeat 89% 45%;
+    }
+    .filters-block span{
+        display: inline-block;
+    }
+
+    .rotated{
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+    }
+
+
+
+    .left-element {
+        width: auto;
+        padding-left: 0;
+    }
+
+
+    .right-element{
+        width: 20%;
+        padding-right: 0;
+    }
+
+
+    #side-c1{
+        width: 66.7%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    #side-c2{
+        width: 33.3%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    .filters-block ul{
+        padding:15px 10px;
+        text-align: left;
+        font: 25px 'Open Sans', sans-serif;
+        width: 300%;
+        overflow: hidden;
+        color: lightgray;
+        transition: margin-left 1s;
+    }
+    .filters-block li{
+        padding-left: 1% ;
+    }
+    .filters-block li span{
+       color: lightgray!important;
+    }
+    .filters-block li:hover{
+       color: red;
+    }
+    .selector{
+        padding-left: 0!important;
+        color: black;
+        font-weight: bold;
+    }
+    .selected{
+        color: red;
+    }
+    .front-selector{
+        color: red;
+    }
+    .front-selector:hover{
+        color: white;
+        background-color: red;
+    }
+    .desk-filter-head{
+        width: 92%;
+        border-bottom: 1px solid lightgray;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #head-info{
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        color: gray;
+        padding: 15px 10px;
+    }
+    #head-info li{
+        font-size: 12px;
+        padding-right: 10px ;
+    }
+    .desk-filter-head i{
+        clear: both;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .desk-filter-head a{
+        width: 15px;
+        height: 15px;
+        margin-left: auto;
+        align-self: center;
+    }
+
+}
+@media screen and (max-width: 660px) and (min-width: 480px) {
+    .menu li{
+        font-size: 11px;
+    }
+    .login-bag {
+        width: 60%;
+    }
+}

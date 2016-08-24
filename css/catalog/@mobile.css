@@ -1,0 +1,347 @@
+@media screen and (max-width: 480px) {
+    .login, #side-c2, .promo-2, .search, .bag img, .social-info {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        clear: both;
+        position: absolute;
+        left: 0;
+        top: 47px;
+        background-color: white;
+        z-index: 99999;
+        margin-top: -100%;
+        transition:display 1s, margin-top 1s;
+        display: none;
+    }
+
+    .menu-visible {
+        display: inline-block;
+        margin-top: 0;
+
+    }
+
+    .menu li {
+        margin: 5%;
+        font-weight: bold;
+        display: block;
+        font: 30px "Open Sans", sans-serif;
+    }
+
+    .main-content {
+        height: 47px;
+        padding-right: 0;
+        display: flex;
+    }
+
+    .main-logo {
+
+    }
+
+    .tablet-promo-2 {
+        display: inline-block;
+    }
+
+    .tablet-menu {
+        display: inline-block;
+        padding-right: 5%;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .tablet-menu img {
+        max-height: 49px;
+        align-self: center;
+    }
+
+    #side-c1 {
+        width: 100%;
+    }
+
+    .login-bag {
+        display: inline-block;
+        align-self: center;
+        float: left;
+        margin-left: 11%;
+        min-width: 0;
+        width: auto;
+    }
+
+    .bag {
+        text-align: center;
+        font-size: 12px;
+        height: inherit;
+        margin: 0;
+        min-width: 0;
+    }
+
+    .new-arrivals-title {
+        font-size: 16px;
+        margin-bottom: 34px;
+    }
+
+    .new-arrivals-subtitle {
+        margin-top: 23px;
+        line-height: 35px;
+        font-size: 13px;
+    }
+
+    .side-promo-banner {
+        border-bottom: none;
+    }
+
+    .new-arrivals {
+        width: 89.8%;
+        margin: 0 auto;
+    }
+
+
+
+    .new-arrivals-content figure:nth-child(4), .new-arrivals-content figure:nth-child(3) {
+        display: none;
+    }
+
+    .new-arrivals-content figure {
+        width: 48%;
+        font-size: 12px;
+        margin: 22px 0 10px 0;
+    }
+
+    .new-arrivals-content button {
+        font-size: 18px;
+        padding: 4% 15%;
+        margin: 58px auto 80px auto;
+    }
+
+    .lists-container section {
+        width: 40%;
+        float: left;
+        padding-top: 8%;
+        padding-bottom: 11%;
+
+    }
+    .lists-container {
+        display: block;
+        overflow: hidden;
+        padding: 0;
+        margin-bottom: -53px;
+    }
+
+    .lists-container ul {
+        margin-top: 30px;
+    }
+    .lists-container li {
+        margin-bottom: 19px;
+    }
+    .phone {
+        margin-left: 4%;
+    }
+    .right-content {
+        margin-top: 6px;
+    }
+    .desk-footer {
+        padding: 0 4.5%;
+    }
+
+    .footer2-left-block {
+        width: 67%;
+        padding: 25px 0;
+    }
+
+    .footer2-medium-block {
+        width: 16%;
+        float: right;
+        padding: 19px 0;
+    }
+
+    .footer2-right-block {
+        display: none;
+    }
+
+    .lists-container section:nth-child(3), .lists-container section:nth-child(4) {
+        border-top: 1px solid lightgray;
+
+    }
+
+    .quick-links {
+        font-size: 15px;
+        padding-right: 4.5%;
+        padding-left: 15.5%;
+    }
+
+    .quick-links-padded-left {
+        padding-left: 4.5%;
+        font-size: 15px;
+    }
+
+    .quick-links-padded-left img {
+        display: none;
+    }
+
+
+    .mobile-footer {
+        display: flex;
+        min-height: 66px;
+        padding: 0 4.5%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .mobile-footer ul {
+        min-height: 66px;
+        width: 60%;
+        display: inline-flex;
+        font: bold 12px 'Roboto', sans-serif;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .mobile-footer img {
+        display: inline-block;
+        margin-right: 4.5%;
+    }
+    .mobile-footer a{
+        align-self: center;
+    }
+
+    .filters {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 4.6%;
+        justify-content: flex-start;
+        cursor: pointer;
+        width: 200%;
+    }
+    .filters-container{
+        overflow: hidden;
+    }
+
+    .filters-block {
+        width: auto;
+    }
+    .front-selector{
+        color: red;
+    }
+    .front-selector:hover{
+        color: white;
+        background-color: red;
+    }
+    .filters-block button {
+        background: none;
+        width: 100%;
+        font-weight: bold;
+        padding: 15px 10px;
+        text-align: left;
+    }
+
+    .filters-block span {
+        display: inline-block;
+    }
+
+    .left-element {
+        width: auto;
+        padding-left: 0;
+    }
+
+    .left-element button {
+        padding-left: 10px;
+    }
+
+    .right-element {
+        width: 20%;
+        padding-right: 0;
+    }
+
+    .filters-block ul {
+        padding: 15px 10px;
+        text-align: left;
+        font: 25px 'Open Sans', sans-serif;
+        width: 300%;
+        overflow: hidden;
+        color: lightgray;
+        transition: margin-left 1s;
+    }
+
+    .filters-block li {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .filters-block li span {
+        color: lightgray !important;
+    }
+
+    .filters-block > button > span {
+        display: none;
+    }
+
+    .filters-block li:hover {
+        color: red;
+    }
+
+    .selector {
+        padding-left: 0 !important;
+        color: black;
+        font-weight: bold;
+    }
+
+    .selected {
+        color: red;
+    }
+
+    .desk-filter-head {
+        width: 92%;
+        border-bottom: 1px solid lightgray;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #head-info {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        color: gray;
+        padding: 15px 10px;
+    }
+
+    #head-info li {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    .desk-filter-head i {
+        clear: both;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .desk-filter-head a {
+        width: 15px;
+        height: 15px;
+        margin-left: auto;
+        align-self: center;
+    }
+
+    .rotated {
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        width: 100%;
+    }
+    .end-line{
+        padding: 0;
+    }
+
+}

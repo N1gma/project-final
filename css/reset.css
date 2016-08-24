@@ -71,7 +71,6 @@ button{
     padding: 0;
 }
 button:focus{
-    border: none;
     outline: none;
 }
 
