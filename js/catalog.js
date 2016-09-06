@@ -43,7 +43,6 @@ window.onload = function () {
             document.getElementById('search-input').focus();
         }
     });
-
     document.getElementById('search-input').addEventListener('blur', function () {
         var width = window.innerWidth;
         if (width <= 1080 && width >= 480) {
@@ -147,13 +146,15 @@ function filtersInit() {
             removeNonselectedType(currentList.children);
             setTimeout(function () {
                 clearFilterSelection(currentList);
-                if(offsetMerge(currentList)){
+                if (offsetMerge(currentList)) {
                     offsetMerge(currentList).classList.add('selected');
                 }
             }, 1500);
         });
     }
 }
+
+//remove 'not selected' tag
 function removeNonselectedType(filterList) {
     for (i = 0; i < filterList.length; i++) {
         if (filterList[i].classList.contains('selector')) {
@@ -162,6 +163,7 @@ function removeNonselectedType(filterList) {
     }
 }
 
+//clear previous selection from target filter
 function clearFilterSelection(currentList) {
     for (var i = 0; i < document.getElementsByClassName('selected').length; i++) {
         if (document.getElementsByClassName('selected')[i].parentNode == currentList) {
@@ -169,7 +171,7 @@ function clearFilterSelection(currentList) {
         }
     }
 }
-
+//find element with lowest offsetLeft property in target filter
 function offsetMerge(currentList) {
     var min;
     for (var i = 0; i < currentList.children.length, !min; i++) {
@@ -185,6 +187,7 @@ function offsetMerge(currentList) {
     return min;
 }
 
+//shift filter left after click
 function shiftLeft(target, array) {
     var shiftRowValue = 0;
     for (var i = 0; array[i] != target; i++) {
@@ -194,15 +197,15 @@ function shiftLeft(target, array) {
     target.parentNode.style.marginLeft = -shiftRowValue + 'px';
 
 }
-//not used
-function getListActualWidth(target,list) {
-    var actualWidth = 0;
-    for (var i = 0; i<list.length; i++) {
-        actualWidth += list[i].offsetWidth;
-    }
-    actualWidth += parseFloat(getComputedStyle(target.parentNode.parentNode.parentNode).paddingLeft);
-    return actualWidth;
-}
+
+/*function getListActualWidth(target,list) {
+ var actualWidth = 0;
+ for (var i = 0; i<list.length; i++) {
+ actualWidth += list[i].offsetWidth;
+ }
+ actualWidth += parseFloat(getComputedStyle(target.parentNode.parentNode.parentNode).paddingLeft);
+ return actualWidth;
+ }*/
 
 function showFilter() {
     if (window.innerWidth <= 1080) {
@@ -251,6 +254,8 @@ function closeFilter(e) {
     }
 }
 
+
+//retrieve index of event target filter list
 function getTargetInparentIndex(target) {
     var target2 = document.getElementsByClassName('filters-block');
     for (var i = 0; i < target2.length; i++) {
@@ -259,7 +264,7 @@ function getTargetInparentIndex(target) {
         }
     }
 }
-
+//retrieve index of event current target filter list
 function getCurrentTargetInparentIndex(target) {
     for (var k = 0; k < target.parentNode.parentNode.children.length; k++) {
         if (target.parentNode.parentNode.children[k].lastElementChild == target) {

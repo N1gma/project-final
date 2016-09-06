@@ -1,16 +1,18 @@
 @media screen and (max-width: 1080px) and (min-width: 480px) {
-    .menu{
-       margin: 2% 0;
+    .menu {
+        margin: 2% 0;
     }
 
-    .login-bag{
+    .login-bag {
         width: 50%;
         margin-top: 1.6%;
     }
-    .form-search{
+
+    .form-search {
         width: 2%;
     }
-    .search{
+
+    .search {
         border: none;
         width: 100%;
         margin: 3% 0;
@@ -22,91 +24,104 @@
         transition: width 1s;
     }
 
-    .search button{
+    .search button {
         width: 100%;
     }
 
-    .menu{
+    .menu {
         width: 100%;
     }
 
-    .social-info,.desk-only{
+    .social-info, .desk-only {
         display: none;
     }
 
-    .hidden-quick-links{
+    .hidden-quick-links {
         display: block;
     }
 
-    .quick-links,.quick-links-padded-left{
+    .quick-links, .quick-links-padded-left {
         width: 32%;
     }
 
-    .footer2-left-block, .footer2-right-block{
+    .footer2-left-block, .footer2-right-block {
         width: 40%;
         box-sizing: border-box;
     }
-    .footer2-medium-block{
+
+    .footer2-medium-block {
         width: 10%;
     }
 
-    .footer2-right-block ul{
+    .footer2-right-block ul {
         justify-content: space-around;
         text-align: right;
     }
 
-
-    #side-c1{
+    #side-c1 {
         width: 66.7%;
         margin: 0;
         padding: 0;
         float: left;
     }
-    #side-c2{
+
+    #side-c2 {
         width: 33.3%;
         margin: 0;
         padding: 0;
         float: left;
     }
-    .side-info{
+
+    .side-info {
 
         margin-left: 7%;
         margin-top: 3%;
 
     }
-    .side-info h4{
+
+    .side-info h4 {
         padding-bottom: 33px;
     }
-    .new-arrivals{
+
+    .new-arrivals {
         margin-top: 4.3%;
     }
-    .bottom-info{
+
+    .bottom-info {
         margin-top: 20%;
     }
-    .title{
+
+    .title {
         padding: 13px 9%;
     }
-    .new-arrivals section{
+
+    .new-arrivals section {
         margin-bottom: 7.5%;
     }
-    .title-wrap{
+
+    .title-wrap {
         margin-top: 8px;
     }
-    .title-2{
+
+    .title-2 {
         padding: 13px 0 13px 10%;
     }
-    .shop-ctrl{
+
+    .shop-ctrl {
         margin: 26px auto 47px auto;
     }
-    .lists-container{
+
+    .lists-container {
         padding: 54px 0 66px 0;
     }
 
 }
+
 @media screen and (max-width: 660px) and (min-width: 480px) {
-    .menu li{
+    .menu li {
         font-size: 11px;
     }
+
     .login-bag {
         width: 60%;
     }

@@ -35,7 +35,6 @@ window.onload = function () {
             document.getElementById('search-input').focus();
         }
     });
-
     document.getElementById('search-input').addEventListener('blur', function () {
         var width = window.innerWidth;
         if (width <= 1080 && width >= 480) {
@@ -113,7 +112,6 @@ function mobile() {
 }
 
 //dynamic images click
-
 function switchTumb(source) {
     var promoSrcArray = [
         ["img/promo/thumb_0.png", "img/promo/thumb_0_1.png"],
@@ -158,16 +156,16 @@ function switchTumb(source) {
 function localDataAdd() {
     document.getElementsByClassName('add-to-bag')[0].addEventListener('click', function () {
         var arr;
-        if(window.localStorage.getItem('shop')){
+        if (window.localStorage.getItem('shop')) {
             arr = JSON.parse(window.localStorage.getItem('shop'));
-        }else{
+        } else {
             arr = [];
             console.log(arr);
         }
-        if(conditionsCheck(arr)){
+        if (conditionsCheck(arr)) {
             arr.push({
                 name: document.getElementsByClassName('details-selection')[0].firstElementChild.innerHTML,
-                price: parseFloat(document.getElementsByClassName('details-selection')[0].children[1].innerHTML.replace(/[^0-9.]/g,"")),
+                price: parseFloat(document.getElementsByClassName('details-selection')[0].children[1].innerHTML.replace(/[^0-9.]/g, "")),
                 size: document.getElementsByClassName('selected-detail')[0].innerHTML,
                 color: document.getElementsByClassName('selected-detail')[1].innerHTML,
                 quantity: 1
@@ -195,16 +193,16 @@ function conditionsCheck(arr) {
 }
 
 function setUpBag() {
-    try{
+    try {
         var arr = JSON.parse(window.localStorage.getItem('shop'));
         var value = 0;
         var count = 0;
-        for(var i =0 ;i<arr.length;i++){
+        for (var i = 0; i < arr.length; i++) {
             value += arr[i].price * arr[i].quantity;
             count += arr[i].quantity;
         }
-        document.getElementById('bagValue').innerHTML = 'Bag £'+ value + '('+ count + ')';
-    }catch(e) {
+        document.getElementById('bagValue').innerHTML = 'Bag £' + value + '(' + count + ')';
+    } catch (e) {
         document.getElementById('bagValue').innerHTML = 'Bag';
     }
 }

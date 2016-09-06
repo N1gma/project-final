@@ -1,5 +1,5 @@
 
-.main-content{
+.main-content {
     display: block;
     max-width: 1180px;
     padding: 1% 4.6% 1.7% 4.6%;
@@ -7,15 +7,15 @@
     overflow: hidden;
 }
 
-.main-logo{
+.main-logo {
     margin: 0;
     padding: 0;
-    font: bold 30px "Open Sans", sans-serif ;
+    font: bold 30px "Open Sans", sans-serif;
     display: inline-block;
     float: left;
 }
 
-.login-bag{
+.login-bag {
     margin-top: 0.8%;
     width: 25%;
     display: inline-block;
@@ -24,13 +24,13 @@
     min-width: 192px;
 }
 
-.login{
+.login {
     padding: 0;
     float: right;
     display: inline-block;
 }
 
-.bag{
+.bag {
     float: right;
     display: inline-block;
     box-sizing: border-box;
@@ -38,25 +38,25 @@
     margin-left: 15%;
     min-width: 130px;
 }
-.bag p{
+
+.bag p {
     float: right;
     display: inline-block;
 }
 
-
-.bag img{
+.bag img {
     float: left;
     margin-left: 20%;
 }
 
-.tablet-menu{
+.tablet-menu {
     display: none;
 }
 
-.menu{
+.menu {
     float: left;
     width: 100%;
-    margin-top: 1.4% ;
+    margin-top: 1.4%;
     clear: both;
     list-style: none;
     display: inline-flex;
@@ -65,14 +65,13 @@
     font-size: 0;
 }
 
-.menu li{
-    font:  14px "Open Sans" , sans-serif ;
+.menu li {
+    font: 14px "Open Sans", sans-serif;
     font-weight: bold;
     display: inline-block;
 }
 
-
-.search{
+.search {
     float: right;
     max-width: 120px;
     font-size: 0;
@@ -80,20 +79,19 @@
     border-bottom: 2px solid lightgray;
 }
 
-.form-search{
+.form-search {
     width: 20.4%;
 }
 
-
-.search button{
+.search button {
     width: 20%;
     display: inline-block;
     border: none;
     padding: 0;
 }
 
-.search input{
-    font:  12px "Open Sans" , sans-serif ;
+.search input {
+    font: 12px "Open Sans", sans-serif;
     width: 80%;
     display: inline-block;
     border: none;
@@ -101,147 +99,162 @@
 }
 
 .search::-webkit-input-placeholder {
-    font:  12px "Open Sans" , sans-serif ;
+    font: 12px "Open Sans", sans-serif;
 }
 
 .search:-moz-placeholder {
-    font:  12px "Open Sans" , sans-serif ;
+    font: 12px "Open Sans", sans-serif;
 }
 
-
-.new-arrivals{
+.new-arrivals {
     max-width: 1180px;
     margin: 0 auto;
-    padding:0 4.5%;
+    padding: 0 4.5%;
     font-size: 0;
     margin-top: 2.3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.new-arrivals section{
+
+.new-arrivals section {
     width: 50%;
     display: inline-flex;
     margin-bottom: 3.5%;
 }
-.new-arrivals figure{
+
+.new-arrivals figure {
     float: left;
     margin: 0;
 }
-.side-info{
+
+.side-info {
     font-size: 14px;
     display: inline-block;
     float: left;
     margin-left: 5%;
     margin-top: 2%;
 }
-.side-info button{
+
+.side-info button {
     margin-top: 20%;
 }
-.side-info a{
+
+.side-info a {
     color: red;
 }
-.side-info p{
+
+.side-info p {
     padding: 3px 0;
     font-size: 12px;
 }
-.side-info h4{
+
+.side-info h4 {
     padding-bottom: 10px;
     font-weight: bold;
 }
-.bottom-info{
+
+.bottom-info {
     font-size: 14px;
     text-align: center;
     margin-top: 12%;
 }
 
-.title{
+.title {
     text-align: left;
     display: block;
     max-width: 1180px;
     padding: 13px 11%;
-    font: bold 26px "Roboto" , sans-serif ;
+    font: bold 26px "Roboto", sans-serif;
     margin: 0 auto;
 }
 
-.title-2{
+.title-2 {
     text-align: left;
     display: block;
     max-width: 1180px;
-    padding: 13px 0 13px 23% ;
-    font: bold 12px "Roboto" , sans-serif ;
+    padding: 13px 0 13px 23%;
+    font: bold 12px "Roboto", sans-serif;
     margin: 0 auto;
 }
-.title-wrap{
+
+.title-wrap {
     width: 100%;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
-.title-wrap-2{
+
+.title-wrap-2 {
     width: 100%;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     background-color: #f7f7f7;
     margin-top: 28px;
 }
-.shop-ctrl{
+
+.shop-ctrl {
     max-width: 1180px;
     margin: 26px auto 61px auto;
-    padding:0 4.5%;
+    padding: 0 4.5%;
     display: flex;
     justify-content: space-between;
 }
-.big-button{
+
+.big-button {
     display: inline-block;
-    font: bold 26px "Open Sans" , sans-serif ;
+    font: bold 26px "Open Sans", sans-serif;
     border: 1px solid lightgray;
     background: white;
     padding: 20px 10%;
 }
-.clear-bag{
+
+.clear-bag {
     margin-left: 20px;
     align-self: center;
     font-weight: bold;
 }
-.second-bag{
+
+.second-bag {
     align-self: center;
     padding-right: 24px;
     font-size: 16px;
     text-align: right;
     line-height: 25px;
 }
-.new-arrivals-content{
+
+.new-arrivals-content {
     width: 100%;
 }
 
-.add-to-bag{
+.add-to-bag {
     margin: 27% auto 28% auto;
     display: block;
-    font: bold 20px "Open Sans" , sans-serif ;
+    font: bold 20px "Open Sans", sans-serif;
     border: 1px solid lightgray;
     background: white;
     padding: 20px 20%;
 }
 
-footer{
-    max-width:100% ;
-    border-top: 1px solid lightgray ;
+footer {
+    max-width: 100%;
+    border-top: 1px solid lightgray;
     margin: 0 auto;
 }
 
-.footer-main-container{
+.footer-main-container {
     margin: 0 auto;
-    max-width:1300px ;
+    max-width: 1300px;
     font-size: 0;
     overflow: hidden;
     display: flex;
     padding: 0 4.5%;
 }
-.end-line{
+
+.end-line {
     max-width: 1180px;
 }
 
-.lists-container{
+.lists-container {
     padding: 54px 0 86px 0;
     width: 100%;
     font-size: 0;
@@ -249,19 +262,19 @@ footer{
     justify-content: space-between;
 }
 
-.quick-links{
+.quick-links {
     display: inline-block;
     font: 18px "Open Sans", sans-serif;
     width: 25%;
 }
 
-.hidden-quick-links{
+.hidden-quick-links {
     font: 18px "Open Sans", sans-serif;
     width: 100%;
     display: none;
 }
 
-.quick-links-padded-left{
+.quick-links-padded-left {
     display: inline-block;
     font: 18px "Open Sans", sans-serif;
     padding-left: 4.5%;
@@ -269,23 +282,22 @@ footer{
     width: 25%;
 }
 
-
-.lists-container ul{
+.lists-container ul {
     margin-top: 46px;
     font: 14px "Roboto", sans-serif;
 }
 
-.lists-container li{
+.lists-container li {
     margin-bottom: 23px;
 }
 
-.lists-container button{
+.lists-container button {
     font: 14px "Roboto", sans-serif;
     padding: 0;
     border: none;
     background: none;
-    padding-left: 9% ;
-    background: url("../../img/icons/twi_ico.png") no-repeat left ;
+    padding-left: 9%;
+    background: url("../../img/icons/twi_ico.png") no-repeat left;
     margin-bottom: 27%;
 }
 
@@ -293,25 +305,24 @@ footer{
     margin-top: 15px;
 }
 
-.phone{
+.phone {
     font-size: 13px;
     margin-left: 1%;
 }
 
-.social-info{
+.social-info {
     font: italic 14px "Crimson", sans-serif;
     color: rgb(117, 117, 117);
     line-height: 200%;
 }
 
-.lists-container img{
+.lists-container img {
     margin: 38px 9% 0 0;
     display: inline-block;
     box-sizing: border-box;
 }
 
-
-.footer2-left-block{
+.footer2-left-block {
     padding: 31px 0;
     display: inline-block;
     width: 25%;
@@ -320,14 +331,15 @@ footer{
     float: left;
 }
 
-.footer2-right-block{
+.footer2-right-block {
     padding: 31px 0;
-     display: inline-block;
-     width: 25%;
-     float: left;
-     font: bold 12px "Roboto", sans-serif;
+    display: inline-block;
+    width: 25%;
+    float: left;
+    font: bold 12px "Roboto", sans-serif;
 }
-.footer2-right-block ul{
+
+.footer2-right-block ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -336,37 +348,39 @@ footer{
 .list-elements {
 
 }
-.list-elements a{
+
+.list-elements a {
     transition: color 1s;
 }
 
-.list-elements a:hover{
-    color:  red;
+.list-elements a:hover {
+    color: red;
 }
 
-.button-element{
-    transition: box-shadow 0.5s ,background-color 0.5s, color 0.5s, border-radius 0.5s, border-color 0.5s;
+.button-element {
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s, border-radius 0.5s, border-color 0.5s;
 }
 
-.button-element:hover{
+.button-element:hover {
     border-color: red;
-    box-shadow: 0 0 5px 5px rgba(255,0,0,0.75);
-    background-color: red ;
+    box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.75);
+    background-color: red;
     color: white;
     border-radius: 5px;
 }
-.button-element:active{
+
+.button-element:active {
     color: black;
 }
 
-.footer2-medium-block{
+.footer2-medium-block {
     padding: 31px 0;
     width: 25%;
     display: inline-block;
     float: left;
 }
 
-.footer2-medium-block button{
+.footer2-medium-block button {
     font: 12px "Open Sans", sans-serif;
     display: block;
     background: url("../../img/icons/share.png") no-repeat right;
@@ -378,33 +392,34 @@ footer{
     height: 21px;
 }
 
-.footer2-medium-block b{
-    font:16px "Open Sans", sans-serif;
+.footer2-medium-block b {
+    font: 16px "Open Sans", sans-serif;
     float: right;
 }
 
-.mobile-footer{
+.mobile-footer {
     display: none;
 }
 
-.desk-footer{
+.desk-footer {
     padding: 0 4.5%;
 }
 
-.padded-left{
+.padded-left {
     padding-left: 4.5%;
 }
 
-#cloneNode{
+#cloneNode {
     display: none;
 }
+
 .thx-message {
     text-align: center;
     display: block;
     width: 100%;
     max-width: 1180px;
     padding: 13px 11%;
-    font: bold 24px "Roboto" , sans-serif;
+    font: bold 24px "Roboto", sans-serif;
     margin: 0 auto;
 }
 

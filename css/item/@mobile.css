@@ -12,7 +12,7 @@
         background-color: white;
         z-index: 99999;
         margin-top: -100%;
-        transition:display 1s, margin-top 1s;
+        transition: display 1s, margin-top 1s;
         display: none;
     }
 
@@ -77,7 +77,6 @@
         min-width: 0;
     }
 
-
     .lists-container section {
         width: 40%;
         float: left;
@@ -85,6 +84,7 @@
         padding-bottom: 11%;
 
     }
+
     /*-----------------*/
     .lists-container {
         display: block;
@@ -96,15 +96,19 @@
     .lists-container ul {
         margin-top: 30px;
     }
+
     .lists-container li {
         margin-bottom: 19px;
     }
+
     .phone {
         margin-left: 4%;
     }
+
     .right-content {
         margin-top: 6px;
     }
+
     .desk-footer {
         padding: 0 4.5%;
     }
@@ -119,8 +123,8 @@
         float: right;
         padding: 19px 0;
     }
-    /*------------------*/
 
+    /*------------------*/
     .lists-container section:nth-child(3), .lists-container section:nth-child(4) {
         border-top: 1px solid lightgray;
 
@@ -140,7 +144,6 @@
     .quick-links-padded-left img {
         display: none;
     }
-
 
     .footer2-right-block {
         display: none;
@@ -172,53 +175,62 @@
         margin-right: 4.5%;
     }
 
-    .mobile-footer a{
+    .mobile-footer a {
         align-self: center;
     }
 
-
-    .main-tumb{
+    .main-tumb {
         width: 100%;
     }
-    .tumbnail-content{
+
+    .tumbnail-content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
     }
-    .tumb-nav{
+
+    .tumb-nav {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
         padding-left: 0;
     }
-    .main-tumb{
+
+    .main-tumb {
         width: 100%;
         margin-bottom: 18px;
     }
-    .back-to{
+
+    .back-to {
         margin-bottom: 0;
         padding-left: 0%;
     }
-    .details-selection{
+
+    .details-selection {
         width: 100%;
         min-width: 0;
     }
-    .title{
+
+    .title {
         margin-top: 6%;
     }
-    .selection-sec{
+
+    .selection-sec {
         flex-wrap: wrap;
     }
-    .select-button{
+
+    .select-button {
         width: 40%;
         margin-bottom: 25px;
     }
-    .add-to-bag{
+
+    .add-to-bag {
         margin-top: 18%;
     }
-    .end-line{
+
+    .end-line {
         padding: 0;
     }
 }

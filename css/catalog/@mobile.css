@@ -12,7 +12,7 @@
         background-color: white;
         z-index: 99999;
         margin-top: -100%;
-        transition:display 1s, margin-top 1s;
+        transition: display 1s, margin-top 1s;
         display: none;
     }
 
@@ -97,8 +97,6 @@
         margin: 0 auto;
     }
 
-
-
     .new-arrivals-content figure:nth-child(4), .new-arrivals-content figure:nth-child(3) {
         display: none;
     }
@@ -109,7 +107,7 @@
         margin: 22px 0 10px 0;
     }
 
-    .new-arrivals-content button{
+    .new-arrivals-content button {
         font-size: 18px;
         padding: 4% 15%;
         margin: 58px auto 80px auto;
@@ -122,6 +120,7 @@
         padding-bottom: 11%;
 
     }
+
     .lists-container {
         display: block;
         overflow: hidden;
@@ -132,15 +131,19 @@
     .lists-container ul {
         margin-top: 30px;
     }
+
     .lists-container li {
         margin-bottom: 19px;
     }
+
     .phone {
         margin-left: 4%;
     }
+
     .right-content {
         margin-top: 6px;
     }
+
     .desk-footer {
         padding: 0 4.5%;
     }
@@ -180,7 +183,6 @@
         display: none;
     }
 
-
     .mobile-footer {
         display: flex;
         min-height: 66px;
@@ -207,7 +209,8 @@
         display: inline-block;
         margin-right: 4.5%;
     }
-    .mobile-footer a{
+
+    .mobile-footer a {
         align-self: center;
     }
 
@@ -220,20 +223,24 @@
         cursor: pointer;
         width: 200%;
     }
-    .filters-container{
+
+    .filters-container {
         overflow: hidden;
     }
 
     .filters-block {
         width: auto;
     }
-    .front-selector{
+
+    .front-selector {
         color: red;
     }
-    .front-selector:hover{
+
+    .front-selector:hover {
         color: white;
         background-color: red;
     }
+
     .filters-block button {
         background: none;
         width: 100%;
@@ -282,7 +289,6 @@
     .filters-block > button > span {
         display: none;
     }
-
 
     .selector {
         padding-left: 0 !important;
@@ -337,7 +343,8 @@
         z-index: 99999;
         width: 100%;
     }
-    .end-line{
+
+    .end-line {
         padding: 0;
     }
 
