@@ -109,7 +109,7 @@
         margin: 22px 0 10px 0;
     }
 
-    .new-arrivals-content button {
+    .new-arrivals-content button{
         font-size: 18px;
         padding: 4% 15%;
         margin: 58px auto 80px auto;
@@ -283,9 +283,6 @@
         display: none;
     }
 
-    .filters-block li:hover {
-        color: red;
-    }
 
     .selector {
         padding-left: 0 !important;

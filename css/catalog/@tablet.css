@@ -45,7 +45,9 @@
         margin: 39px 0 10px 0;
     }
     .new-arrivals-content button{
-        margin: 208px auto 139px auto
+        margin: 26% auto 18% auto;
+        padding: 18px 9%;
+        font-size: 22px;
     }
 
     .social-info,.desk-only{
@@ -161,9 +163,7 @@
     .filters-block li span{
        color: lightgray!important;
     }
-    .filters-block li:hover{
-       color: red;
-    }
+
     .selector{
         padding-left: 0!important;
         color: black;

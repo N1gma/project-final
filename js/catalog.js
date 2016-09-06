@@ -1,14 +1,14 @@
 window.onload = function () {
     if (window.innerWidth <= 1080 && window.innerWidth >= 480) {
-        switchOrder('new-arrivals',4, 5, '5', '4');
+        switchOrder('new-arrivals', 4, 5, '5', '4');
         tablet();
     }
     if (window.innerWidth > 1080) {
-        switchOrder('new-arrivals',4, 5, '4', '5');
+        switchOrder('new-arrivals', 4, 5, '4', '5');
         desktop();
     }
     if (window.innerWidth < 480) {
-        switchOrder('new-arrivals',3, 5, '5', '3');
+        switchOrder('new-arrivals', 3, 5, '5', '3');
         mobile();
     }
     setUpBag();
@@ -70,21 +70,21 @@ window.onload = function () {
 
 window.onresize = function () {
     if (window.innerWidth <= 1180 && window.innerWidth >= 480) {
-        switchOrder('new-arrivals',4, 5, '5', '4');
+        switchOrder('new-arrivals', 4, 5, '5', '4');
         tablet();
     }
     if (window.innerWidth > 1180) {
-        switchOrder('new-arrivals',4, 5, '4', '5');
+        switchOrder('new-arrivals', 4, 5, '4', '5');
         desktop();
     }
     if (window.innerWidth < 480) {
-        switchOrder('new-arrivals',3, 5, '5', '3');
+        switchOrder('new-arrivals', 3, 5, '5', '3');
         mobile();
     }
 };
 
 //order replace
-function switchOrder(elClass,el1, el2, pos1, pos2) {
+function switchOrder(elClass, el1, el2, pos1, pos2) {
     var orderArr = document.getElementsByClassName(elClass)[0].children;
     for (var i = 0; i < orderArr.length; i++) {
         orderArr[i].style.order = i + 1;
@@ -118,41 +118,73 @@ function mobile() {
 
 //filters
 function filtersInit() {
+    document.getElementById('closeFilter').addEventListener('click', closeFilter);
     document.getElementsByClassName('filters')[0].addEventListener('click', function (e) {
         if (e.target.nodeName.toUpperCase() != 'LI' && e.target.id != 'closeFilter' && e.target.firstChild.id != 'closeFilter') {
             showFilter();
         }
         if (window.innerWidth <= 1080 && e.target.nodeName.toUpperCase() == 'LI' && !e.target.classList.contains('selector') && e.target.parentNode.id != ('head-info')) {
-            var array = e.target.parentNode.children;
-            for (var i = 0; i < document.getElementsByClassName('selected').length; i++) {
-                if (document.getElementsByClassName('selected')[i].parentNode == e.target.parentNode) {
-                    document.getElementsByClassName('selected')[i].classList.remove('selected');
-                }
-            }
-            for (i = 0; i < array.length; i++) {
-                if (array[i].classList.contains('selector')) {
-                    array[i].style.display = 'none';
-                }
-            }
+            var filterList = e.target.parentNode.children;
+            removeNonselectedType(e.target.parentNode.children);
+            clearFilterSelection(e.target.parentNode);
             e.target.classList.add('selected');
             document.getElementById('head-info').children[getTargetInparentIndex(e.target)].innerHTML = e.target.innerHTML;
-            shiftLeft(e.target, array);
-        }
-        if (e.target.id == 'closeFilter') {
-            document.getElementById('closeFilter').addEventListener('click', closeFilter);
+            shiftLeft(e.target, filterList);
         }
     });
-    for(var i =0;i<document.getElementsByClassName('filters-list').length; i++){
+    for (var i = 0; i < document.getElementsByClassName('filters-list').length; i++) {
         document.getElementsByClassName('filters-list')[i].addEventListener('touchstart', function (e) {
-            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].initial = e.changedTouches[e.changedTouches.length-1].pageX;
+            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].initial = e.changedTouches[e.changedTouches.length - 1].pageX;
         });
         document.getElementsByClassName('filters-list')[i].addEventListener('touchmove', function (e) {
-            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].final = e.changedTouches[e.changedTouches.length-1].pageX;
+            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].final = e.changedTouches[e.changedTouches.length - 1].pageX;
             var difference = document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].final - document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].initial;
-            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].style.marginLeft = parseFloat(getComputedStyle( document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)]).marginLeft) + difference + 'px';
+            document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)].style.marginLeft = parseFloat(getComputedStyle(document.getElementsByClassName('filters-list')[getCurrentTargetInparentIndex(e.currentTarget)]).marginLeft) + difference + 'px';
+
+        });
+        document.getElementsByClassName('filters-list')[i].addEventListener('touchend', function (e) {
+            var currentList = document.getElementsByClassName('filters-list')[getTargetInparentIndex(e.target)];
+            removeNonselectedType(currentList.children);
+            setTimeout(function () {
+                clearFilterSelection(currentList);
+                if(offsetMerge(currentList)){
+                    offsetMerge(currentList).classList.add('selected');
+                }
+            }, 1500);
         });
     }
 }
+function removeNonselectedType(filterList) {
+    for (i = 0; i < filterList.length; i++) {
+        if (filterList[i].classList.contains('selector')) {
+            filterList[i].style.display = 'none';
+        }
+    }
+}
+
+function clearFilterSelection(currentList) {
+    for (var i = 0; i < document.getElementsByClassName('selected').length; i++) {
+        if (document.getElementsByClassName('selected')[i].parentNode == currentList) {
+            document.getElementsByClassName('selected')[i].classList.remove('selected');
+        }
+    }
+}
+
+function offsetMerge(currentList) {
+    var min;
+    for (var i = 0; i < currentList.children.length, !min; i++) {
+        if (currentList.children[i].offsetLeft > 0) {
+            min = currentList.children[i];
+        }
+    }
+    for (i = 0; i < currentList.children.length, !min; i++) {
+        if (currentList.children[i].offsetLeft > 0 && !currentList.children[i].classList.contains('selector') && currentList.children[i].offsetLeft < min.offsetLeft) {
+            min = currentList.children[i];
+        }
+    }
+    return min;
+}
+
 function shiftLeft(target, array) {
     var shiftRowValue = 0;
     for (var i = 0; array[i] != target; i++) {
@@ -162,6 +194,16 @@ function shiftLeft(target, array) {
     target.parentNode.style.marginLeft = -shiftRowValue + 'px';
 
 }
+//not used
+function getListActualWidth(target,list) {
+    var actualWidth = 0;
+    for (var i = 0; i<list.length; i++) {
+        actualWidth += list[i].offsetWidth;
+    }
+    actualWidth += parseFloat(getComputedStyle(target.parentNode.parentNode.parentNode).paddingLeft);
+    return actualWidth;
+}
+
 function showFilter() {
     if (window.innerWidth <= 1080) {
         document.getElementsByClassName('filters')[0].classList.add('rotated');
@@ -169,7 +211,7 @@ function showFilter() {
         document.getElementsByClassName('about-filter')[0].style.display = 'block';
         for (var i = 0; i < document.getElementsByClassName('filters-list').length; i++) {
             document.getElementsByClassName('filters-list')[i].style.display = 'flex';
-            if(document.getElementsByClassName('filters-list')[i].parentNode.firstElementChild.bufferClone){
+            if (document.getElementsByClassName('filters-list')[i].parentNode.firstElementChild.bufferClone) {
                 var parent = document.getElementsByClassName('filters-list')[i].parentNode.firstElementChild;
                 parent.innerHTML = parent.bufferClone;
                 parent.classList.remove('front-selector');
@@ -182,15 +224,16 @@ function showFilter() {
         }
     }
 }
-function closeFilter() {
+function closeFilter(e) {
     if (window.innerWidth <= 1080) {
+        e.preventDefault();
         document.getElementsByClassName('filters')[0].classList.remove('rotated');
         document.getElementsByClassName('desk-filter-head')[0].style.display = 'none';
         document.getElementsByClassName('about-filter')[0].style.display = 'none';
         for (var i = 0; i < document.getElementsByClassName('filters-list').length; i++) {
             document.getElementsByClassName('filters-list')[i].style.display = 'none';
             for (var j = 0; j < document.getElementsByClassName('filters-list')[i].children.length; j++) {
-                if(document.getElementsByClassName('filters-list')[i].children[j].classList.contains('selected')){
+                if (document.getElementsByClassName('filters-list')[i].children[j].classList.contains('selected')) {
                     var clone = document.getElementsByClassName('filters-list')[i].children[j].innerHTML;
                     var parent = document.getElementsByClassName('filters-list')[i].parentNode.firstElementChild;
                     parent.bufferClone = parent.innerHTML;
@@ -217,25 +260,25 @@ function getTargetInparentIndex(target) {
     }
 }
 
-function getCurrentTargetInparentIndex(target){
-    for(var k= 0;k<target.parentNode.parentNode.children.length;k++){
-        if(target.parentNode.parentNode.children[k].lastElementChild == target){
-            return k-2;
+function getCurrentTargetInparentIndex(target) {
+    for (var k = 0; k < target.parentNode.parentNode.children.length; k++) {
+        if (target.parentNode.parentNode.children[k].lastElementChild == target) {
+            return k - 2;
         }
     }
 }
 
 function setUpBag() {
-    try{
+    try {
         var arr = JSON.parse(window.localStorage.getItem('shop'));
         var value = 0;
         var count = 0;
-        for(var i =0 ;i<arr.length;i++){
+        for (var i = 0; i < arr.length; i++) {
             value += arr[i].price * arr[i].quantity;
             count += arr[i].quantity;
         }
-        document.getElementById('bagValue').innerHTML = 'Bag £'+ value + '('+ count + ')';
-    }catch(e) {
+        document.getElementById('bagValue').innerHTML = 'Bag £' + value + '(' + count + ')';
+    } catch (e) {
         document.getElementById('bagValue').innerHTML = 'Bag';
     }
 }
