@@ -123,7 +123,7 @@
 
     .rotated {
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         background-color: white;
         left: 0;
         top: 0;

@@ -14,6 +14,25 @@ window.onload = function () {
     dynamicImgHoverInit('promo-2-container-1');
     dynamicImgHoverInit('side-promo-banner');
 
+    // hover catalog
+    document.getElementsByClassName('new-arrivals-content')[0].addEventListener('mouseover', function (e) {
+        if (e.target.nodeName.toUpperCase() == 'IMG' && e.target.getAttribute('src') != 'img/new_arrivals/hover.png') {
+            var target = e.target;
+            var appender = target.cloneNode(true);
+            appender.setAttribute('src', 'img/new_arrivals/hover.png');
+            target.parentNode.style.position = 'relative';
+            appender.classList.add('hover');
+            target.parentNode.insertBefore(appender, target);
+        }
+    });
+    document.getElementsByClassName('new-arrivals')[0].addEventListener('mouseout', function (e) {
+        if (e.target.nodeName.toUpperCase() == 'IMG' && e.target.getAttribute('src') == 'img/new_arrivals/hover.png') {
+            var target = e.target.parentNode;
+            target.removeChild(target.children[0]);
+            target.parentNode.style.position = 'static';
+        }
+    });
+
     //promo-slider
     function moveRegular() {
         if (currentMargin != '200') {

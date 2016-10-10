@@ -2,7 +2,7 @@
 .main-content{
     display: block;
     max-width: 1180px;
-    padding: 1% 4.6% 0.8% 4.6%;
+    padding: 1% 4.6% 1.7% 4.6%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -439,5 +439,11 @@ footer{
 
 .padded-left{
     padding-left: 4.5%;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 

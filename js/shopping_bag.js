@@ -128,6 +128,7 @@ function setUpContent() {
             displacement.indexLink = i;
             document.getElementsByClassName('new-arrivals')[0].appendChild(displacement);
         }
+
     } catch (e) {
         var message = document.createElement('div');
         message.innerHTML = 'Your bag is empty!';

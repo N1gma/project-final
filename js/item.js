@@ -166,8 +166,8 @@ function localDataAdd() {
             arr.push({
                 name: document.getElementsByClassName('details-selection')[0].firstElementChild.innerHTML,
                 price: parseFloat(document.getElementsByClassName('details-selection')[0].children[1].innerHTML.replace(/[^0-9.]/g, "")),
-                size: document.getElementsByClassName('selected-detail')[0].innerHTML,
-                color: document.getElementsByClassName('selected-detail')[1].innerHTML,
+                size: [document.getElementsByClassName('selected-detail')[0].innerHTML],
+                color: [document.getElementsByClassName('selected-detail')[1].innerHTML],
                 quantity: 1
             });
         }
@@ -181,15 +181,46 @@ function conditionsCheck(arr) {
         var size = document.getElementsByClassName('selected-detail')[0].innerHTML;
         var color = document.getElementsByClassName('selected-detail')[1].innerHTML;
     } catch (err) {
+        showMessage('Smth misssing!');
         return false;
     }
-    for (var i = 0; i < arr.length; i++) {
+    /*for (var i = 0; i < arr.length; i++) {
         if (arr[i] && arr[i].size == size && arr[i].color == color) {
             arr[i].quantity++;
             return false;
         }
+    }*/
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] && arr[i].size.indexOf(size) ==-1 && arr[i].color.indexOf(color) !=-1 ) {
+            arr[i].size.push(size);
+            showMessage('Added to bag!');
+            return false;
+        }
+        if (arr[i] &&  arr[i].color.indexOf(color) ==-1 && arr[i].size.indexOf(size) !=-1 ) {
+            arr[i].color.push(color);
+            showMessage('Added to bag!');
+            return false;
+        }
+        if (arr[i] &&  arr[i].color.indexOf(color) !=-1 && arr[i].size.indexOf(size) !=-1 ) {
+            arr[i].quantity++;
+            showMessage('Added to bag!');
+            return false;
+        }
+        /*if (arr[i] && arr[i].size.indexOf(size) !=-1 && arr[i].color.indexOf(color) !=-1) {
+            arr[i].quantity++;
+            showMessage('Added to bag!');
+            return false;
+        }*/
     }
+    showMessage('Added to bag!');
     return true;
+}
+
+function showMessage(message) {
+    document.getElementsByClassName('add-to-bag')[0].innerHTML = message;
+    setTimeout(function () {
+        document.getElementsByClassName('add-to-bag')[0].innerHTML = 'Add to bag';
+    }, 1000)
 }
 
 function setUpBag() {
